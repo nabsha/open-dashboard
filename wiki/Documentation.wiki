@@ -1,0 +1,2 @@
+==Sequence Diagram==
+[http://open-dashboard.googlecode.com/files/odb_seq_dig.jpg]
