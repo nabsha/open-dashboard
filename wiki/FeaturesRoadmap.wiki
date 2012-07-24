@@ -1,13 +1,17 @@
-#summary One-sentence summary of this page.
+#labels Phase-Requirements
+#Features to be added
 
-= Introduction =
+==Features==
+  * Subscriber registration
+  * Subscriber logout
+  * Subscriber save data sources
+  * Subscriber save chart layout
+  * Subscriber number of data points selections
+  * Subscriber grouping for publications permission control
+  * Restricted publications to Subscriber Groups
 
-Add your content here.
+== Enhancements ==
+  * Periodic purging old entries
+  * 
 
-
-= Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+Please post a comment if you want any feature to be added.
