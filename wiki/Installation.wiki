@@ -2,7 +2,7 @@
 
 = Installation Guide =
   # Before downloading, you must have latest java version installed on your machine. You can download one from [http://java.com/en/download/index.jsp here] 
-  # Download the latest ODBserver release from Downloads
+  # Download the latest ODBserver release from [http://code.google.com/p/open-dashboard/downloads/list Downloads]
   # Extract the contents of the zip file on to your file system.
 
 This is it, you've just finished the installation.
