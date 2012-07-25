@@ -1,8 +1,9 @@
-#summary One-sentence summary of this page.
+#summary ODBServer Installation Guide
 
-= Introduction =
-
-Add your content here.
+= Installation Guide =
+  * Before downloading, you must have latest java version installed on your machine. You can download one from [http://java.com/en/download/index.jsp here] 
+  * Download the latest release from [Downloads]
+  * Extract the contents
 
 
 = Details =
