@@ -1,14 +1,22 @@
 #summary ODBServer Installation Guide
 
 = Installation Guide =
-  * Before downloading, you must have latest java version installed on your machine. You can download one from [http://java.com/en/download/index.jsp here] 
-  * Download the latest release from [Downloads]
-  * Extract the contents
+  # Before downloading, you must have latest java version installed on your machine. You can download one from [http://java.com/en/download/index.jsp here] 
+  # Download the latest ODBserver release from [Downloads]
+  # Extract the contents of the zip file on to your file system.
 
+This is it, you've just finished the installation.
+----
 
-= Details =
+To start the application now, you have to start the following processes,
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+  # Browse to ./odbserver/bin/
+  # For windows
+    * startup.bat  (This will start the webserver so you can see your charts in web browser)
+    * runServer.bat  (This will start a very light-weight database)
+
+  # For Unix
+    * startup.sh   (This will start the webserver so you can see your charts in web browser)
+    * runServer.bat (This will start a very light-weight database)
+
+Next if you want to become the publisher, you have to install and start the ODBpublisher to start publishing data. Check out ODBPublisher Installation and getting started guide.
