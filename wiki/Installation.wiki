@@ -1,11 +1,21 @@
-#summary ODBServer Installation Guide
+#summary OpenDashboard Installation Guide
 
-= Installation Guide =
-  # Before downloading, you must have latest java version installed on your machine. You can download one from [http://java.com/en/download/index.jsp here] 
+= Getting Started = 
+To get started with using open-dashboard, you need to understand a couple of points regarding OpenDashboard
+  # Open-dashboard works on a Publisher Subscriber model(i.e. there will be someone publishing specific data, and someone subscribing to that data. It is just like twitter in a way, the difference is subscriber is actually observing the visual representation of the publisher data)
+  # To achieve this model, OpenDashboard is implemented as two part
+    # A web server, which will receive publisher data. (Currently) The same web server will be used to serve subscribers
+    # A publisher application, which will be used by publishers to publish data.
+  # So for a complete working setup of OpenDashboard in intranet environment, you need both components, ODBServer(the web server) and the ODBPublisher(the publisher client). Now we will discuss the installation and startup guide for both
+
+
+== Installation Guide ==
+  # Before installation, you must have latest java version installed on your machine. You can download one from [http://java.com/en/download/index.jsp here] 
+=== ODBServer ===
   # Download the latest ODBserver release from [http://code.google.com/p/open-dashboard/downloads/list Downloads]
   # Extract the contents of the zip file on to your file system.
 
-This is it, you've just finished the installation.
+This is it, you've just finished the installation of ODBServer.
 ----
 
 To start the application now, you have to start the following processes,
@@ -19,4 +29,21 @@ To start the application now, you have to start the following processes,
     * startup.sh   (This will start the webserver so you can see your charts in web browser)
     * runServer.bat (This will start a very light-weight database)
 
-Next if you want to become the publisher, you have to install and start the ODBpublisher to start publishing data. Check out ODBPublisher Installation and getting started guide.
+
+
+=== ODBPublisher ===
+  # Download the latest ODBPublisher release from [http://code.google.com/p/open-dashboard/downloads/list Downloads]
+  # Extract the contents of the zip file on to your file system.
+  # Edit config/config.props. The details on how to configure are available in the same file.
+  # Edit PublisherConfiguration.xml. The details are provided in the same file
+  # Ensure that the ODBServer is up and running by opening http://localhost:8080/odbserver from your browser. If this step fails and you are sure that you executed the above mentioned process then you check the logs from odbserver/logs/localhost-[date].log for detailed study
+  # Once ODBServer is running fine, start the application using start.bat in the home directory
+
+And that's it. 
+
+Now the interesting part,
+ === ODBSubscriber ===
+  # Well you dont need any installation for this part, you should be able to hit your browser at http://localhost:8080/odbserver and see the login page.
+  # Login on the page using 'admin','admin' and it will take you the page where you can start adding charts for your view.
+
+Hope this guide will be helpful.
