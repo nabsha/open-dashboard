@@ -6,7 +6,7 @@ My wife have opted to choose the humanoids development stages as my release mile
 
   # !PreNatal
   # !NewBorn
-  # !Infant
-  # !Toddler
-  # !Pubert
-  # !Young Adult (This is the point after which I will start the whole numbers :))
+  # Infant
+  # Toddler
+  # Pubert
+  # Young Adult (This is the point after which I will start the whole numbers :))
